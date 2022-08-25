@@ -24,6 +24,17 @@ See [this section](#stable-diffusion-v1) below and the [model card](https://hugg
 A suitable [conda](https://conda.io/) environment named `ldm` can be created
 and activated with:
 
+run from stable-diffusion-cpuonly directory if you are running on nvidia gpu with 8gb of Vram.
+
+```
+mkdir -p models/ldm/stable-diffusion-v1/
+conda install pytorch torchvision torchaudio -c pytorch
+conda env create -f environment.yaml
+conda activate ldm
+```
+
+
+
 run from stable-diffusion-cpuonly directory
 
 ```
