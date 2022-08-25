@@ -25,6 +25,7 @@ A suitable [conda](https://conda.io/) environment named `ldm` can be created
 and activated with:
 
 ```
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
 conda env create -f environment-cpuonly.yaml
 conda activate ldm
 ```
