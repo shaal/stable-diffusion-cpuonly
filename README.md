@@ -75,6 +75,10 @@ pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
 pip install -e git+https://github.com/TencentARC/GFPGAN#egg=GFPGAN
 pip install -e git+https://github.com/xinntao/Real-ESRGAN#egg=realesrgan
 pip install -e git+https://github.com/hlky/k-diffusion-sd#egg=k_diffusion
+pip install
+
+pip install pynvml gradio keras-unet fairseq
+
 ```
 Go here and download the correct mode from here. YOu'll have to agree to the license setup an account, I believe.
 This the bread and butter AI art generating learning model.

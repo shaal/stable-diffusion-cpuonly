@@ -32,8 +32,4 @@ dependencies:
     - transformers==4.19.2
     - torchmetrics==0.6.0
     - kornia==0.6
-    - pynvml
-    - gradio
-    - keras-unet
-    - fairseq
     - -e .
