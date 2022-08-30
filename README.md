@@ -70,14 +70,12 @@ conda env create -f environment-cpuonly.yaml
 conda activate ldm
 ```
 ```
+pip install pynvml gradio keras-unet fairseq basicsr facexlib
 pip install -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
 pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
 pip install -e git+https://github.com/TencentARC/GFPGAN#egg=GFPGAN
 pip install -e git+https://github.com/xinntao/Real-ESRGAN#egg=realesrgan
 pip install -e git+https://github.com/hlky/k-diffusion-sd#egg=k_diffusion
-pip install
-
-pip install pynvml gradio keras-unet fairseq
 
 ```
 Go here and download the correct mode from here. YOu'll have to agree to the license setup an account, I believe.

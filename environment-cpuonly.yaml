@@ -7,8 +7,6 @@ dependencies:
   - pip=20.3
   - numpy=1.19.2
   - pip:
-    - basicsr
-    - facexlib
     - lmdb
     - pyyaml
     - scipy
