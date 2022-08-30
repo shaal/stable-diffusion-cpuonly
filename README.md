@@ -21,20 +21,40 @@ See [this section](#stable-diffusion-v1) below and the [model card](https://hugg
 
   
 ## Requirements
+
+Install Anaconda
 A suitable [conda](https://conda.io/) environment named `ldm` can be created
 and activated with:
 
-run from stable-diffusion-cpuonly directory if you are running on nvidia gpu with 8gb of Vram.
+Install Git
+https://git-scm.com/downloads
+version control manager for code
+we just use it to download repos from GitHub
+Must be on system PATH, When installing select the option add to system PATH
 
-```
-mkdir -p models/ldm/stable-diffusion-v1/
-mkdir -p outputs/extras-samples
-mkdir -p outputs/img2img-samples/samples
-mkdir -p outputs/txt2img-samples/samples
-conda install pytorch torchvision torchaudio -c pytorch
-conda env create -f environment.yaml
-conda activate ldm
-```
+Install FFmpeg
+https://ffmpeg.org/download.html
+Video encoding tool library
+we use this mainly to turn image sequences into videos
+Must be on system PATH
+https://www.wikihow.com/Install-FFmpeg-on-Windows
+
+Install ImageMagick
+https://imagemagick.org/script/download.php
+software suite for displaying, creating, converting, modifying, and editing raster images.
+used in some projects but handy to have already installed
+
+Install Wget
+used to download models for projects
+Windows users need this verison
+https://eternallybored.org/misc/wget/
+download the .exe and I copied it to my C:/Windows/System directory (this isn't the correct way just the fastest)
+
+Install cURL
+used to download models, some projects use this instead of wget
+Latest versions of windows have cURL pre installed
+Older versions that dont include cURL use this one
+https://curl.se/windows/
 
 
 
