@@ -76,40 +76,35 @@ pip install -e git+https://github.com/openai/CLIP.git@main#egg=clip
 pip install -e git+https://github.com/TencentARC/GFPGAN#egg=GFPGAN
 pip install -e git+https://github.com/xinntao/Real-ESRGAN#egg=realesrgan
 pip install -e git+https://github.com/hlky/k-diffusion-sd#egg=k_diffusion
-
 ```
 Go here and download the correct mode from here. YOu'll have to agree to the license setup an account, I believe.
 This the bread and butter AI art generating learning model.
-...
+
 https://huggingface.co/CompVis/stable-diffusion-v-1-4-original
-...
+
 
 copy it to your stable-diffusion-cpuonly/models/ldm/stable-diffusion-v1 directory and rename it to model.ckpt
 
 Download the model - this is for better face generation or cleanup
-```
+
 https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth 
-```
+
 and copy it to your stable-diffusion-cpuonly/src/GFPGAN/experiments/pretrained_models directory
 
 Download the model - this is for upscaling your images
-```
+
 https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
-```
-```
+
+
 https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth
-```
+
 and copy these to your stable-diffusion-cpuonly/src/realsrgan/experiments/pretrained_models directory
 
 
 Run the following command
-
+```
 python .\webui.py --no-half
-
-
-...
-python inference_gfpgan.py -i inputs/whole_imgs -o results -v 1.3 -s 2
-...
+```
 
 
 
