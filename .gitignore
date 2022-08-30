@@ -24,3 +24,5 @@ src/taming-transformers/
 *.ckpt
 *.png
 condaenv.fintae5p.requirements.txt
+GFPGAN/
+*.pth
