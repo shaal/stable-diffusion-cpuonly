@@ -42,7 +42,9 @@ run from stable-diffusion-cpuonly directory
 
 ```
 mkdir -p models/ldm/stable-diffusion-v1/
-
+mkdir -p outputs/extras-samples
+mkdir -p outputs/img2img-samples/samples
+mkdir -p outputs/txt2img-samples/samples
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 conda env create -f environment-cpuonly.yaml
 conda activate ldm
